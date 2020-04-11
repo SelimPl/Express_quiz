@@ -3,8 +3,9 @@ const path = require('path')
 const gameRoutes = require('./routes/game');
 const app = express();
 
-app.listen(3000, () => {
-    console.log('Serwer działa na : http://localhost:3000/');
+port = process.env.PORT || 3000;
+app.listen(port, () => {
+    // console.log('Serwer działa na : http://localhost:3000/');
 });
 
 
